@@ -1,0 +1,192 @@
+:root {
+  --primary: cadetblue;
+  --light-gray: #D3D3D3;
+  --bar-bg: #212529;
+}
+
+/* Global */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'CormorantGaramond', sans-serif;
+}
+
+h1,
+h2 {
+  color: var(--primary);
+}
+
+.pe-custom {
+  padding-right: 2rem;
+}
+
+.px-custom {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.ps-custom {
+  padding-left: 2rem;
+}
+
+.heading h3 {
+  font-family: 'FashionWacks', sans-serif;
+  font-weight: 500;
+}
+
+.border-primary {
+  border-color: var(--primary) !important;
+}
+
+.icon {
+  font-size: 10px;
+}
+
+.list-style-none {
+  list-style: none !important;
+}
+
+.bg-light-gray {
+  background-color: var(--light-gray) !important;
+}
+
+.social .circle {
+  /* height: 25px;
+  width: 25px; */
+  /* background-color: #D3D3D3;
+  display: inline-block;
+  display: -moz-inline-stack;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.29rem 0.4rem 0.29rem 0.4rem; */
+}
+
+/* .social .icon {
+  width: 15px;
+  height: 15px;
+} */
+
+
+
+
+
+
+
+
+
+
+/* Menu */
+
+.menu-icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.menu-icon .menu-icon__cheeckbox {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+  -webkit-touch-callout: none;
+  position: absolute;
+  opacity: 0;
+}
+
+.menu-icon .humburger {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 22px;
+  height: 12px;
+}
+
+.menu-icon .menu-line {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--bar-bg, #000);
+  border-radius: 1px;
+  transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+}
+
+.menu-icon .menu-line:first-of-type {
+  top: 0;
+}
+
+.menu-icon .menu-line:last-of-type {
+  bottom: 0;
+}
+
+.menu-icon.active .menu-line:first-of-type,
+.menu-icon .menu-icon__cheeckbox:checked+.humburger .menu-line:first-of-type {
+  transform: rotate(45deg);
+  top: 5px;
+}
+
+.menu-icon.active .menu-line:last-of-type,
+.menu-icon .menu-icon__cheeckbox:checked+.humburger .menu-line:last-of-type {
+  transform: rotate(-45deg);
+  bottom: 5px;
+}
+
+.menu-icon.active:hover .menu-line:first-of-type,
+.menu-icon.active:hover .menu-line:last-of-type,
+.menu-icon:hover .menu-icon__cheeckbox:checked+.humburger .menu-line:first-of-type,
+.menu-icon:hover .menu-icon__cheeckbox:checked+.humburger .menu-line:last-of-type {
+  width: 22px;
+}
+
+@media (min-width: 1024px) {
+  .menu-icon:hover .menu-line:first-of-type {
+    width: 26px;
+  }
+
+  .menu-icon:hover .menu-line:last-of-type {
+    width: 12px;
+  }
+}
+
+/*# sourceMappingURL=stl.css.map */
+
+
+
+
+
+
+#topbar .main-logo {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+#topbar .main-logo .first-word {
+  font-family: 'FashionWacks', sans-serif;
+  font-size: 44px;
+}
+
+#topbar .main-logo .slash {
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+
+
+
+#home h1 {
+  color: var(--primary);
+}
+
+
+/* Footer */
